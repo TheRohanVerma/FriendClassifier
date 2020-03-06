@@ -1,0 +1,77 @@
+body {
+    background-color: #fff;
+}
+
+.no-display {
+    display: none;
+}
+
+
+@keyframes example {
+  0%   {background-color:white; left:0px; top:0px;}
+  25%  {background-color:#aec0d6; left:50px; top:0px;}
+  50%  {background-color:#34447d; left:10px; top:10px;}
+  75%  {background-color:#272869; left:0px; top:10px;}
+  100% {background-color:#1c1d4d; left:0px; top:0px;}
+}
+.center {
+	border-style: inset;
+    margin: auto;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.title {
+	border-style: inset;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #262626;
+}
+
+.content {
+	border-style: outset;
+    margin-top: 10em;
+}
+
+.analyze {
+    margin-top: 5em;
+}
+
+.upload-label {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.result-label {
+    margin-top: 0.5em;
+    padding: 10px;
+    font-size: 13px;
+}
+
+button.choose-file-button {
+    width: 200px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #131b42;
+    border: solid 1px #fff;
+    font-size: 13px;
+    color: #fff;
+}
+
+button.analyze-button {
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+    width: 200px;
+    height: 40px;
+    border: solid 1px #303e85;
+    border-radius: 2px;
+    background-color: #303e85;
+    font-size: 13px;
+    color: #fff;
+}
+
+button:focus {
+    outline: 0;
+}

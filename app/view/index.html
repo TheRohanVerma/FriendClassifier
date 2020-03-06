@@ -1,0 +1,52 @@
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='../static/style.css'>
+  <script src='../static/client.js'></script>
+
+</head>
+<body>
+<div>
+  <div class='center' style="background-color:white">
+    <div class='title' style="width: 100%;
+  height: 20%;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;" ><h1 >&#128102 Classify Your Images &#128103</h1></div>
+  <p><p style="font-size:50px">&#128526;</p>
+  </P
+    <p >
+      <h2> You can upload you picture here and the classifier will tell you which friend on mine do you look like! </h2>
+    </p>
+    <div class='content'>
+      <div class='no-display'>
+        <input id='file-input'
+               class='no-display'
+               type='file'
+               name='file'
+               accept='image/*'
+               onchange='showPicked(this)'>
+      </div>
+      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Your Image</button>
+      <div class='upload-label'>
+        <label id='upload-label'>No file chosen</label>
+      </div>
+      <div>
+        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+      </div>
+      <div class='analyze'>
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+		<h4> There will be error in prediction of images of Samreet, Harman and Nandini due to images with filters and similar traits.</h4>
+		The accuacy is just 87% due to availability of less data. Moreover, most of these pictures included slefies with faces not in the centre.
+      </div>
+      <div class='result-label'>
+        <label id='result-label'></label>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
